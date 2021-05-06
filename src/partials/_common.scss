@@ -14,10 +14,37 @@ body {
     margin: auto;
 }
 
+img {
+    width: 100%;
+    display: block;
+}
+
+.btn_logo {
+    display: inline-block;
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+    vertical-align: text-bottom;
+}
+
 li {
     list-style-type: none;
 }
 
 a {
     text-decoration: none;
+}
+
+.two_col {
+
+    .col {
+        width: 50%;
+        float: left;
+    }
+}
+
+@mixin clearfix {
+    content: "";
+    display: table;
+    clear: both;
 }

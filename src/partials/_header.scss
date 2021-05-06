@@ -1,43 +1,91 @@
 // HEADER
 header {
 
-    padding: 20px 0;
-
-    .container {
-        display: flex;
-        border-bottom: 1px solid $brand_primary_color;
-    }
-
-    .logo {
-        flex-grow: 1;
-    }
+    color: $brand_primary_color;
 
     a {
-        color: $brand_primary_color;
         font-weight: bold;
     }
 
-    li {
-        display: inline-block;
-        margin-left: 20px;
+    .nav {
+        padding-top: 20px;
+        border-bottom: 1px solid $brand_primary_color;
 
-        &.google_sign {
-            border: 1px solid #2b40a0;
-            border-radius: 7px;
-            margin-bottom: 7px;
-            padding: 10px;
-
-            img {
-                width: 20px;
-                height: auto;
-                margin-right: 5px;
-                display: inline-block;
-                vertical-align: text-bottom;
+        .logo {
+            float: left;
+        }
+    
+        .nav_bar {
+            float: right;
+    
+            a {
+                color: $brand_primary_color;
             }
+        
+            li {
+                display: inline-block;
+                margin-left: 20px;
+        
+                &.google_sign {
+                    display: inline-block;
+                    border: 1px solid #2b40a0;
+                    border-radius: 7px;
+                    margin-bottom: 7px;
+        
+                    a {
+                        padding: 10px;
+                        color: #2b40a0;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+
+        &::after {
+            @include clearfix;
+        }
+
+    }
+
+    .jumbotron {
+
+        padding: 50px 0;
+
+        .title {
+
+            margin-bottom: 50px;
+
+            h1 {
+                font-size: $h1_size;
+            }
+    
+            p {
+                font-size: $sub_title_size;
+                margin-top: 10px;
+            }
+        }
+
+        .login {
 
             a {
-                color: #2b40a0;
+                color: white;
+                background-color: #2b40a0;
+                border-radius: 7px;                
+                padding: 6px 12px;
             }
+
+            span {
+                margin: 0 5px;
+            }
+
+            .use_email {
+                display: block;
+                margin: 20px 0;
+            }
+        }
+
+        &::after {
+            @include clearfix;
         }
     }
 }

@@ -13,6 +13,19 @@ body {
   margin: auto;
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
+.btn_logo {
+  display: inline-block;
+  width: 20px;
+  height: auto;
+  margin-right: 5px;
+  vertical-align: text-bottom;
+}
+
 li {
   list-style-type: none;
 }
@@ -21,37 +34,78 @@ a {
   text-decoration: none;
 }
 
+.two_col .col {
+  width: 50%;
+  float: left;
+}
+
 header {
-  padding: 20px 0;
-}
-header .container {
-  display: flex;
-  border-bottom: 1px solid #57402c;
-}
-header .logo {
-  flex-grow: 1;
+  color: #57402c;
 }
 header a {
-  color: #57402c;
   font-weight: bold;
 }
-header li {
+header .nav {
+  padding-top: 20px;
+  border-bottom: 1px solid #57402c;
+}
+header .nav .logo {
+  float: left;
+}
+header .nav .nav_bar {
+  float: right;
+}
+header .nav .nav_bar a {
+  color: #57402c;
+}
+header .nav .nav_bar li {
   display: inline-block;
   margin-left: 20px;
 }
-header li.google_sign {
+header .nav .nav_bar li.google_sign {
+  display: inline-block;
   border: 1px solid #2b40a0;
   border-radius: 7px;
   margin-bottom: 7px;
+}
+header .nav .nav_bar li.google_sign a {
   padding: 10px;
-}
-header li.google_sign img {
-  width: 20px;
-  height: auto;
-  margin-right: 5px;
-  display: inline-block;
-  vertical-align: text-bottom;
-}
-header li.google_sign a {
   color: #2b40a0;
+  display: inline-block;
+}
+header .nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+header .jumbotron {
+  padding: 50px 0;
+}
+header .jumbotron .title {
+  margin-bottom: 50px;
+}
+header .jumbotron .title h1 {
+  font-size: 45px;
+}
+header .jumbotron .title p {
+  font-size: 22px;
+  margin-top: 10px;
+}
+header .jumbotron .login a {
+  color: white;
+  background-color: #2b40a0;
+  border-radius: 7px;
+  padding: 6px 12px;
+}
+header .jumbotron .login span {
+  margin: 0 5px;
+}
+header .jumbotron .login .use_email {
+  display: block;
+  margin: 20px 0;
+}
+header .jumbotron::after {
+  content: "";
+  display: table;
+  clear: both;
 }
