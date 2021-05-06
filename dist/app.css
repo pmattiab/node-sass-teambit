@@ -1,1 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 20px 0;
+}
+header .container {
+  display: flex;
+  border-bottom: 1px solid #57402c;
+}
+header .logo {
+  flex-grow: 1;
+}
+header a {
+  color: #57402c;
+  font-weight: bold;
+}
+header li {
+  display: inline-block;
+  margin-left: 20px;
+}
+header li.google_sign {
+  border: 1px solid #2b40a0;
+  border-radius: 7px;
+  margin-bottom: 7px;
+  padding: 10px;
+}
+header li.google_sign img {
+  width: 20px;
+  height: auto;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+header li.google_sign a {
+  color: #2b40a0;
+}
