@@ -1,0 +1,24 @@
+@mixin clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@mixin login_btn {
+
+    a {
+        color: white;
+        background-color: #2b40a0;
+        border-radius: 7px;                
+        padding: 6px 12px;
+    }
+
+    span {
+        margin: 0 5px;
+    }
+
+    .use_email {
+        display: block;
+        margin: 20px 0;
+    }
+}

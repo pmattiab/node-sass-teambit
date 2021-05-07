@@ -15,11 +15,10 @@ body {
 
 img {
   width: 100%;
-  display: block;
+  display: inline-block;
 }
 
 .btn_logo {
-  display: inline-block;
   width: 20px;
   height: auto;
   margin-right: 5px;
@@ -34,9 +33,37 @@ a {
   text-decoration: none;
 }
 
+.text_center {
+  text-align: center;
+}
+
+.two_col {
+  width: 100%;
+}
 .two_col .col {
   width: 50%;
   float: left;
+}
+.two_col .col_dx {
+  float: right;
+}
+.two_col::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tree_col {
+  width: 100%;
+}
+.tree_col .col {
+  width: calc(100% / 3);
+  float: left;
+}
+.tree_col::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 header {
@@ -63,7 +90,6 @@ header .nav .nav_bar li {
   margin-left: 20px;
 }
 header .nav .nav_bar li.google_sign {
-  display: inline-block;
   border: 1px solid #2b40a0;
   border-radius: 7px;
   margin-bottom: 7px;
@@ -88,19 +114,19 @@ header .jumbotron .title h1 {
   font-size: 45px;
 }
 header .jumbotron .title p {
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 10px;
 }
-header .jumbotron .login a {
+header .jumbotron .login_btn a {
   color: white;
   background-color: #2b40a0;
   border-radius: 7px;
   padding: 6px 12px;
 }
-header .jumbotron .login span {
+header .jumbotron .login_btn span {
   margin: 0 5px;
 }
-header .jumbotron .login .use_email {
+header .jumbotron .login_btn .use_email {
   display: block;
   margin: 20px 0;
 }
@@ -108,4 +134,101 @@ header .jumbotron::after {
   content: "";
   display: table;
   clear: both;
+}
+
+main {
+  color: #57402c;
+}
+main .row {
+  padding: 30px 0;
+}
+main .title h2 {
+  font-size: 40px;
+}
+main .title h3 {
+  font-size: 25px;
+}
+main .sub_title p {
+  font-size: 20px;
+}
+main .sub_title a {
+  font-size: 20px;
+  display: block;
+  margin: 30px 0;
+}
+main #explane {
+  background-color: #ffe6d1;
+}
+main #explane .row.row_top {
+  padding: 60px 0;
+  border-bottom: 1px solid #57402c;
+}
+main #explane .row.row_bot {
+  padding: 60px 0;
+}
+main #explane .tree_col {
+  margin: 50px 0;
+}
+main #explane .tree_col img {
+  height: 100px;
+  width: auto;
+}
+main #explane .single_img {
+  margin-bottom: 50px;
+}
+main #explane .single_img img {
+  width: 250px;
+  height: auto;
+}
+main #founder {
+  background-color: #ffe6d1;
+}
+main #founder .title {
+  padding: 30px 0;
+}
+main #founder .title h2.inline {
+  display: inline;
+}
+main #founder .title img {
+  width: 40px;
+  height: auto;
+  margin: 10px 0 0 10px;
+}
+main #founder .testimony {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  padding: 30px;
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid #2b40a0;
+  border-radius: 7px;
+}
+main #founder .testimony .profile_photos {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+main #founder .testimony .profile_photos a, main #founder .testimony .profile_photos span {
+  display: block;
+}
+main #founder .testimony .profile_photos img {
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
+}
+main #founder .login_btn {
+  text-align: center;
+}
+main #founder .login_btn a {
+  color: white;
+  background-color: #2b40a0;
+  border-radius: 7px;
+  padding: 6px 12px;
+}
+main #founder .login_btn span {
+  margin: 0 5px;
+}
+main #founder .login_btn .use_email {
+  display: block;
+  margin: 20px 0;
 }

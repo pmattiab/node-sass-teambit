@@ -27,7 +27,6 @@ header {
                 margin-left: 20px;
         
                 &.google_sign {
-                    display: inline-block;
                     border: 1px solid #2b40a0;
                     border-radius: 7px;
                     margin-bottom: 7px;
@@ -44,7 +43,6 @@ header {
         &::after {
             @include clearfix;
         }
-
     }
 
     .jumbotron {
@@ -56,7 +54,7 @@ header {
             margin-bottom: 50px;
 
             h1 {
-                font-size: $h1_size;
+                font-size: $title1_size;
             }
     
             p {
@@ -65,23 +63,8 @@ header {
             }
         }
 
-        .login {
-
-            a {
-                color: white;
-                background-color: #2b40a0;
-                border-radius: 7px;                
-                padding: 6px 12px;
-            }
-
-            span {
-                margin: 0 5px;
-            }
-
-            .use_email {
-                display: block;
-                margin: 20px 0;
-            }
+        .login_btn {
+            @include login_btn;
         }
 
         &::after {

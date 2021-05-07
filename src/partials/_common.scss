@@ -16,11 +16,10 @@ body {
 
 img {
     width: 100%;
-    display: block;
+    display: inline-block;
 }
 
 .btn_logo {
-    display: inline-block;
     width: 20px;
     height: auto;
     margin-right: 5px;
@@ -35,16 +34,38 @@ a {
     text-decoration: none;
 }
 
+.text_center {
+    text-align: center;
+}
+
 .two_col {
+
+    width: 100%;
 
     .col {
         width: 50%;
         float: left;
     }
+
+    .col_dx {
+        float: right;
+    }
+
+    &::after {
+        @include clearfix;
+    }
 }
 
-@mixin clearfix {
-    content: "";
-    display: table;
-    clear: both;
+.tree_col {
+
+    width: 100%;
+
+    .col {
+        width: calc(100% / 3);
+        float: left;
+    }
+
+    &::after {
+        @include clearfix;
+    }
 }
