@@ -4,13 +4,26 @@
     clear: both;
 }
 
+@mixin my-display-flex {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
 @mixin login_btn {
 
     a {
         color: white;
-        background-color: #2b40a0;
+        font-weight: bold;
+        background-color: $blue_btn_color;
+        border: 1px solid $blue_btn_color;
         border-radius: 7px;                
         padding: 6px 12px;
+
+        &:hover {
+            color: $blue_btn_color;
+            background-color: white;
+        }
     }
 
     span {

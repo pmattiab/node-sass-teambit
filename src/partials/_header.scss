@@ -24,17 +24,21 @@ header {
         
             li {
                 display: inline-block;
-                margin-left: 20px;
+                margin: 0 0 10px 20px;
         
                 &.google_sign {
-                    border: 1px solid #2b40a0;
-                    border-radius: 7px;
-                    margin-bottom: 7px;
         
                     a {
+                        color: $blue_btn_color;
+                        border: 1px solid $blue_btn_color;
+                        border-radius: 7px;
                         padding: 10px;
-                        color: #2b40a0;
                         display: inline-block;
+
+                        &:hover {
+                            color: white;
+                            background-color: $blue_btn_color;
+                        }
                     }
                 }
             }
@@ -63,7 +67,7 @@ header {
             }
         }
 
-        .login_btn {
+        .login {
             @include login_btn;
         }
 

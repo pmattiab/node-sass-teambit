@@ -87,17 +87,18 @@ header .nav .nav_bar a {
 }
 header .nav .nav_bar li {
   display: inline-block;
-  margin-left: 20px;
-}
-header .nav .nav_bar li.google_sign {
-  border: 1px solid #2b40a0;
-  border-radius: 7px;
-  margin-bottom: 7px;
+  margin: 0 0 10px 20px;
 }
 header .nav .nav_bar li.google_sign a {
-  padding: 10px;
   color: #2b40a0;
+  border: 1px solid #2b40a0;
+  border-radius: 7px;
+  padding: 10px;
   display: inline-block;
+}
+header .nav .nav_bar li.google_sign a:hover {
+  color: white;
+  background-color: #2b40a0;
 }
 header .nav::after {
   content: "";
@@ -117,16 +118,22 @@ header .jumbotron .title p {
   font-size: 20px;
   margin-top: 10px;
 }
-header .jumbotron .login_btn a {
+header .jumbotron .login a {
   color: white;
+  font-weight: bold;
   background-color: #2b40a0;
+  border: 1px solid #2b40a0;
   border-radius: 7px;
   padding: 6px 12px;
 }
-header .jumbotron .login_btn span {
+header .jumbotron .login a:hover {
+  color: #2b40a0;
+  background-color: white;
+}
+header .jumbotron .login span {
   margin: 0 5px;
 }
-header .jumbotron .login_btn .use_email {
+header .jumbotron .login .use_email {
   display: block;
   margin: 20px 0;
 }
@@ -139,62 +146,67 @@ header .jumbotron::after {
 main {
   color: #57402c;
 }
-main .row {
+
+.row {
   padding: 30px 0;
 }
-main .title h2 {
+
+.title h2 {
   font-size: 40px;
 }
-main .title h3 {
+.title h3 {
   font-size: 25px;
 }
-main .sub_title p {
+
+.sub_title p {
   font-size: 20px;
 }
-main .sub_title a {
+.sub_title a {
   font-size: 20px;
   display: block;
   margin: 30px 0;
 }
-main #explane {
+
+#explane {
   background-color: #ffe6d1;
 }
-main #explane .row.row_top {
+#explane .row.row_top {
   padding: 60px 0;
   border-bottom: 1px solid #57402c;
 }
-main #explane .row.row_bot {
+#explane .row.row_bot {
   padding: 60px 0;
 }
-main #explane .tree_col {
+#explane .tree_col {
   margin: 50px 0;
 }
-main #explane .tree_col img {
+#explane .tree_col img {
   height: 100px;
   width: auto;
 }
-main #explane .single_img {
+#explane .single_img {
   margin-bottom: 50px;
 }
-main #explane .single_img img {
+#explane .single_img img {
   width: 250px;
   height: auto;
 }
-main #founder {
+
+#founder {
   background-color: #ffe6d1;
 }
-main #founder .title {
+#founder .title {
   padding: 30px 0;
 }
-main #founder .title h2.inline {
+#founder .title h2.inline {
   display: inline;
 }
-main #founder .title img {
+#founder .title img {
   width: 40px;
   height: auto;
   margin: 10px 0 0 10px;
 }
-main #founder .testimony {
+#founder .testimony {
   max-width: 700px;
   margin: 0 auto 50px;
   padding: 30px;
@@ -203,32 +215,38 @@ main #founder .testimony {
   border: 1px solid #2b40a0;
   border-radius: 7px;
 }
-main #founder .testimony .profile_photos {
+#founder .testimony .profile_photos {
   display: flex;
   align-items: center;
   margin-top: 20px;
 }
-main #founder .testimony .profile_photos a, main #founder .testimony .profile_photos span {
+#founder .testimony .profile_photos a, #founder .testimony .profile_photos span {
   display: block;
 }
-main #founder .testimony .profile_photos img {
+#founder .testimony .profile_photos img {
   width: 50px;
   height: auto;
   margin-right: 20px;
 }
-main #founder .login_btn {
+#founder .login {
   text-align: center;
 }
-main #founder .login_btn a {
+#founder .login a {
   color: white;
+  font-weight: bold;
   background-color: #2b40a0;
+  border: 1px solid #2b40a0;
   border-radius: 7px;
   padding: 6px 12px;
 }
-main #founder .login_btn span {
+#founder .login a:hover {
+  color: #2b40a0;
+  background-color: white;
+}
+#founder .login span {
   margin: 0 5px;
 }
-main #founder .login_btn .use_email {
+#founder .login .use_email {
   display: block;
   margin: 20px 0;
 }

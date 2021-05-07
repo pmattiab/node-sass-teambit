@@ -1,122 +1,122 @@
 main {
     color: $brand_primary_color;
+}
+
+.row {
+    padding: 30px 0;
+}
+
+.title {
+
+    h2 {
+        font-size: $title2_size;
+    }
+
+    h3 {
+        font-size: $title3_size;
+    }
+}
+
+.sub_title {
+
+    p {
+        font-size: $sub_title_size;
+    }
+
+    a {
+        font-size: $sub_title_size;
+        display: block;
+        margin: 30px 0;
+    }
+}
+
+#explane {
+    background-color: $brand_secondary_color;
 
     .row {
-        padding: 30px 0;
+
+        &.row_top {
+            padding: 60px 0;
+            border-bottom: 1px solid $brand_primary_color;
+        }
+
+        &.row_bot {
+            padding: 60px 0;
+        }
     }
+
+    .tree_col {
+
+        margin: 50px 0;
+
+        img {
+            height: 100px;
+            width: auto;
+        }
+    }
+
+    .single_img {
+
+        margin-bottom: 50px;
+
+        img {
+            width: 250px;
+            height: auto;
+        }
+    }
+}
+
+#founder {
+    background-color: $brand_secondary_color;
 
     .title {
 
+        padding: 30px 0;
+
         h2 {
-            font-size: $title2_size;
+
+            &.inline {
+                display: inline;
+            }
         }
-    
-        h3 {
-            font-size: $title3_size;
+
+        img {
+            width: 40px;
+            height: auto;
+            margin: 10px 0 0 10px;
         }
     }
 
-    .sub_title {
+    .testimony {
 
-        p {
-            font-size: $sub_title_size;
-        }
+        max-width: 700px;
+        margin: 0 auto 50px;
+        padding: 30px;
+        font-size: 14px;
+        background-color: white;
+        border: 1px solid $blue_btn_color;
+        border-radius: 7px;
 
-        a {
-            font-size: $sub_title_size;
-            display: block;
-            margin: 30px 0;
-        }
-    }
+        .profile_photos {
 
-    #explane {
-        background-color: $brand_secondary_color;
+            @include my-display-flex;
+            align-items: center;
+            margin-top: 20px;
 
-        .row {
-    
-            &.row_top {
-                padding: 60px 0;
-                border-bottom: 1px solid $brand_primary_color;
+            a, span {
+                display: block;
             }
-
-            &.row_bot {
-                padding: 60px 0;
-            }
-        }
-    
-        .tree_col {
-
-            margin: 50px 0;
-    
-            img {
-                height: 100px;
-                width: auto;
-            }
-        }
-
-        .single_img {
-
-            margin-bottom: 50px;
 
             img {
-                width: 250px;
+                width: 50px;
                 height: auto;
+                margin-right: 20px;
             }
         }
     }
 
-    #founder {
-        background-color: $brand_secondary_color;
-
-        .title {
-
-            padding: 30px 0;
-
-            h2 {
-    
-                &.inline {
-                    display: inline;
-                }
-            }
-    
-            img {
-                width: 40px;
-                height: auto;
-                margin: 10px 0 0 10px;
-            }
-        }
-
-        .testimony {
-
-            max-width: 700px;
-            margin: 0 auto 50px;
-            padding: 30px;
-            font-size: 14px;
-            background-color: white;
-            border: 1px solid #2b40a0;
-            border-radius: 7px;
-
-            .profile_photos {
-
-                display: flex;
-                align-items: center;
-                margin-top: 20px;
-
-                a, span {
-                    display: block;
-                }
-
-                img {
-                    width: 50px;
-                    height: auto;
-                    margin-right: 20px;
-                }
-            }
-        }
-
-        .login_btn {
-            text-align: center;
-            @include login_btn;
-        }
+    .login {
+        text-align: center;
+        @include login_btn;
     }
 }
