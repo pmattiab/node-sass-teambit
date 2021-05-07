@@ -1,0 +1,67 @@
+// MEDIA QUERY SMARTPHONE
+@media screen and (max-width: $breakpoint-smartphone) {
+
+    header {
+
+        .nav {
+            padding: 15px 20px;
+    
+            .burger_menu {
+                display: block;
+                font-size: 35px;
+                float: right;
+            }
+        }
+    
+        .nav_bar {
+            display: none;
+        }
+    
+        .jumbotron {
+            text-align: center;
+        }
+    }
+
+    .two_col {
+    
+        .col {
+
+            width: 100%;
+            padding: 0 30px;
+        }
+    }
+
+    .tree_col {
+
+        .col {
+
+            width: 100%;
+            padding: 0 30px;
+        }
+    }
+
+    #explane .tree_col img {
+        height: 150px;
+        width: auto;
+        margin-bottom: 50px;
+    }
+
+    #founder {
+        padding: 30px;
+    }
+
+    footer {
+
+        padding: 20px 50px;
+
+        .col_30 {
+            width: calc(100% - 40px);
+            margin: 20px;
+        }
+
+        .col_14 {
+            width: calc(50% - 40px);
+            margin: 20px;
+        }
+    }
+}

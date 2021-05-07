@@ -5,6 +5,7 @@ header {
 
     .nav {
         padding-top: 20px;
+        background-color: white;
         border-bottom: 1px solid $brand_primary_color;
 
         .logo {
@@ -46,6 +47,10 @@ header {
             }
         }
 
+        .burger_menu {
+            display: none;
+        }
+
         &::after {
             @include clearfix;
         }
@@ -53,6 +58,7 @@ header {
 
     .jumbotron {
 
+        margin-top: 80px;
         padding: 50px 0;
 
         .title {

@@ -73,6 +73,7 @@ header {
 }
 header .nav {
   padding-top: 20px;
+  background-color: white;
   border-bottom: 1px solid #0414b3;
 }
 header .nav .logo {
@@ -104,12 +105,16 @@ header .nav .nav_bar li.google_sign a:hover {
   color: white;
   background-color: #0414b3;
 }
+header .nav .burger_menu {
+  display: none;
+}
 header .nav::after {
   content: "";
   display: table;
   clear: both;
 }
 header .jumbotron {
+  margin-top: 80px;
   padding: 50px 0;
 }
 header .jumbotron .title {
@@ -296,4 +301,53 @@ footer::after {
   content: "";
   display: table;
   clear: both;
+}
+
+@media screen and (max-width: 820px) {
+  header .nav {
+    padding: 15px 20px;
+  }
+  header .nav .burger_menu {
+    display: block;
+    font-size: 35px;
+    float: right;
+  }
+  header .nav_bar {
+    display: none;
+  }
+  header .jumbotron {
+    text-align: center;
+  }
+
+  .two_col .col {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .tree_col .col {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  #explane .tree_col img {
+    height: 150px;
+    width: auto;
+    margin-bottom: 50px;
+  }
+
+  #founder {
+    padding: 30px;
+  }
+
+  footer {
+    padding: 20px 50px;
+  }
+  footer .col_30 {
+    width: calc(100% - 40px);
+    margin: 20px;
+  }
+  footer .col_14 {
+    width: calc(50% - 40px);
+    margin: 20px;
+  }
 }
