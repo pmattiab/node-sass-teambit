@@ -31,7 +31,7 @@ main {
 }
 
 #explane {
-    background-color: lighten($brand_primary_color, 40%);
+    background-color: $brand_secondary_color;
 
     .row {
 
@@ -67,7 +67,7 @@ main {
 }
 
 #founder {
-    background-color: lighten($brand_primary_color, 40%);
+    background-color: $brand_secondary_color;
 
     .title {
 

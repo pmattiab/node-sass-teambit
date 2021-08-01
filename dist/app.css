@@ -69,12 +69,12 @@ a {
 }
 
 header {
-  color: #0414b3;
+  color: #57402c;
 }
 header .nav {
   padding-top: 20px;
   background-color: white;
-  border-bottom: 1px solid #0414b3;
+  border-bottom: 1px solid #57402c;
 }
 header .nav .logo {
   float: left;
@@ -87,7 +87,7 @@ header .nav .nav_bar {
   float: right;
 }
 header .nav .nav_bar a {
-  color: #0414b3;
+  color: #57402c;
   font-weight: bold;
 }
 header .nav .nav_bar li {
@@ -95,15 +95,15 @@ header .nav .nav_bar li {
   margin: 0 0 10px 20px;
 }
 header .nav .nav_bar li.google_sign a {
-  color: #0414b3;
-  border: 1px solid #0414b3;
+  color: #2b40a0;
+  border: 1px solid #2b40a0;
   border-radius: 7px;
   padding: 10px;
   display: inline-block;
 }
 header .nav .nav_bar li.google_sign a:hover {
   color: white;
-  background-color: #0414b3;
+  background-color: #2b40a0;
 }
 header .nav .burger_menu {
   display: none;
@@ -130,13 +130,13 @@ header .jumbotron .title p {
 header .jumbotron .login a {
   color: white;
   font-weight: bold;
-  background-color: #0414b3;
-  border: 1px solid #0414b3;
+  background-color: #2b40a0;
+  border: 1px solid #2b40a0;
   border-radius: 7px;
   padding: 6px 12px;
 }
 header .jumbotron .login a:hover {
-  color: #0414b3;
+  color: #2b40a0;
   background-color: white;
 }
 header .jumbotron .login span {
@@ -153,7 +153,7 @@ header .jumbotron::after {
 }
 
 main {
-  color: #0414b3;
+  color: #57402c;
 }
 
 .row {
@@ -177,11 +177,11 @@ main {
 }
 
 #explane {
-  background-color: #8791fc;
+  background-color: #f6e2d5;
 }
 #explane .row.row_top {
   padding: 60px 0;
-  border-bottom: 1px solid #0414b3;
+  border-bottom: 1px solid #57402c;
 }
 #explane .row.row_bot {
   padding: 60px 0;
@@ -202,7 +202,7 @@ main {
 }
 
 #founder {
-  background-color: #8791fc;
+  background-color: #f6e2d5;
 }
 #founder .title {
   padding: 30px 0;
@@ -221,7 +221,7 @@ main {
   padding: 30px;
   font-size: 14px;
   background-color: white;
-  border: 1px solid #0414b3;
+  border: 1px solid #2b40a0;
   border-radius: 7px;
 }
 #founder .testimony .profile_photos {
@@ -243,13 +243,13 @@ main {
 #founder .login a {
   color: white;
   font-weight: bold;
-  background-color: #0414b3;
-  border: 1px solid #0414b3;
+  background-color: #2b40a0;
+  border: 1px solid #2b40a0;
   border-radius: 7px;
   padding: 6px 12px;
 }
 #founder .login a:hover {
-  color: #0414b3;
+  color: #2b40a0;
   background-color: white;
 }
 #founder .login span {
@@ -263,7 +263,7 @@ main {
 footer {
   width: 100%;
   padding: 50px 0;
-  color: #0414b3;
+  color: #57402c;
 }
 footer .col {
   float: left;
@@ -292,7 +292,7 @@ footer .footer_nav h4 {
   margin-bottom: 20px;
 }
 footer .footer_nav a {
-  color: #0414b3;
+  color: #57402c;
 }
 footer span {
   display: inline;
